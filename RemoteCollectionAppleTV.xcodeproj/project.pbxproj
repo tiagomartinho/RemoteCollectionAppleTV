@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */; };
+		EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ViewController.swift */; };
+		EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4931BDEA8B80071ED47 /* Main.storyboard */; };
+		EAC2A4971BDEA8B80071ED47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */; };
+		EAC2A4A21BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */; };
+		EAC2A4AD1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC2A49E1BDEA8B80071ED47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC2A4841BDEA8B80071ED47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC2A48B1BDEA8B80071ED47;
+			remoteInfo = RemoteCollectionAppleTV;
+		};
+		EAC2A4A91BDEA8B80071ED47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC2A4841BDEA8B80071ED47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC2A48B1BDEA8B80071ED47;
+			remoteInfo = RemoteCollectionAppleTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC2A4941BDEA8B80071ED47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC2A4981BDEA8B80071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC2A49D1BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteCollectionAppleTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCollectionAppleTVTests.swift; sourceTree = "<group>"; };
+		EAC2A4A31BDEA8B80071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC2A4A81BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteCollectionAppleTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCollectionAppleTVUITests.swift; sourceTree = "<group>"; };
+		EAC2A4AE1BDEA8B80071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC2A4891BDEA8B80071ED47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A49A1BDEA8B80071ED47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A4A51BDEA8B80071ED47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAC2A4831BDEA8B80071ED47 = {
+			isa = PBXGroup;
+			children = (
+				EAC2A48E1BDEA8B80071ED47 /* RemoteCollectionAppleTV */,
+				EAC2A4A01BDEA8B80071ED47 /* RemoteCollectionAppleTVTests */,
+				EAC2A4AB1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests */,
+				EAC2A48D1BDEA8B80071ED47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC2A48D1BDEA8B80071ED47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */,
+				EAC2A49D1BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.xctest */,
+				EAC2A4A81BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC2A48E1BDEA8B80071ED47 /* RemoteCollectionAppleTV */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */,
+				EAC2A4911BDEA8B80071ED47 /* ViewController.swift */,
+				EAC2A4931BDEA8B80071ED47 /* Main.storyboard */,
+				EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */,
+				EAC2A4981BDEA8B80071ED47 /* Info.plist */,
+			);
+			path = RemoteCollectionAppleTV;
+			sourceTree = "<group>";
+		};
+		EAC2A4A01BDEA8B80071ED47 /* RemoteCollectionAppleTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */,
+				EAC2A4A31BDEA8B80071ED47 /* Info.plist */,
+			);
+			path = RemoteCollectionAppleTVTests;
+			sourceTree = "<group>";
+		};
+		EAC2A4AB1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */,
+				EAC2A4AE1BDEA8B80071ED47 /* Info.plist */,
+			);
+			path = RemoteCollectionAppleTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC2A4B11BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTV" */;
+			buildPhases = (
+				EAC2A4881BDEA8B80071ED47 /* Sources */,
+				EAC2A4891BDEA8B80071ED47 /* Frameworks */,
+				EAC2A48A1BDEA8B80071ED47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteCollectionAppleTV;
+			productName = RemoteCollectionAppleTV;
+			productReference = EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC2A49C1BDEA8B80071ED47 /* RemoteCollectionAppleTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC2A4B41BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVTests" */;
+			buildPhases = (
+				EAC2A4991BDEA8B80071ED47 /* Sources */,
+				EAC2A49A1BDEA8B80071ED47 /* Frameworks */,
+				EAC2A49B1BDEA8B80071ED47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC2A49F1BDEA8B80071ED47 /* PBXTargetDependency */,
+			);
+			name = RemoteCollectionAppleTVTests;
+			productName = RemoteCollectionAppleTVTests;
+			productReference = EAC2A49D1BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAC2A4A71BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC2A4B71BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVUITests" */;
+			buildPhases = (
+				EAC2A4A41BDEA8B80071ED47 /* Sources */,
+				EAC2A4A51BDEA8B80071ED47 /* Frameworks */,
+				EAC2A4A61BDEA8B80071ED47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC2A4AA1BDEA8B80071ED47 /* PBXTargetDependency */,
+			);
+			name = RemoteCollectionAppleTVUITests;
+			productName = RemoteCollectionAppleTVUITests;
+			productReference = EAC2A4A81BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC2A4841BDEA8B80071ED47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Tiago Martinho";
+				TargetAttributes = {
+					EAC2A48B1BDEA8B80071ED47 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					EAC2A49C1BDEA8B80071ED47 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = EAC2A48B1BDEA8B80071ED47;
+					};
+					EAC2A4A71BDEA8B80071ED47 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = EAC2A48B1BDEA8B80071ED47;
+					};
+				};
+			};
+			buildConfigurationList = EAC2A4871BDEA8B80071ED47 /* Build configuration list for PBXProject "RemoteCollectionAppleTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC2A4831BDEA8B80071ED47;
+			productRefGroup = EAC2A48D1BDEA8B80071ED47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */,
+				EAC2A49C1BDEA8B80071ED47 /* RemoteCollectionAppleTVTests */,
+				EAC2A4A71BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC2A48A1BDEA8B80071ED47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC2A4971BDEA8B80071ED47 /* Assets.xcassets in Resources */,
+				EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A49B1BDEA8B80071ED47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A4A61BDEA8B80071ED47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC2A4881BDEA8B80071ED47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */,
+				EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A4991BDEA8B80071ED47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC2A4A21BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC2A4A41BDEA8B80071ED47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC2A4AD1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC2A49F1BDEA8B80071ED47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */;
+			targetProxy = EAC2A49E1BDEA8B80071ED47 /* PBXContainerItemProxy */;
+		};
+		EAC2A4AA1BDEA8B80071ED47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */;
+			targetProxy = EAC2A4A91BDEA8B80071ED47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC2A4931BDEA8B80071ED47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC2A4941BDEA8B80071ED47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC2A4AF1BDEA8B80071ED47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		EAC2A4B01BDEA8B80071ED47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC2A4B21BDEA8B80071ED47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RemoteCollectionAppleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAC2A4B31BDEA8B80071ED47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RemoteCollectionAppleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAC2A4B51BDEA8B80071ED47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RemoteCollectionAppleTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteCollectionAppleTV.app/RemoteCollectionAppleTV";
+			};
+			name = Debug;
+		};
+		EAC2A4B61BDEA8B80071ED47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RemoteCollectionAppleTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteCollectionAppleTV.app/RemoteCollectionAppleTV";
+			};
+			name = Release;
+		};
+		EAC2A4B81BDEA8B80071ED47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RemoteCollectionAppleTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RemoteCollectionAppleTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EAC2A4B91BDEA8B80071ED47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RemoteCollectionAppleTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tm.RemoteCollectionAppleTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RemoteCollectionAppleTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC2A4871BDEA8B80071ED47 /* Build configuration list for PBXProject "RemoteCollectionAppleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC2A4AF1BDEA8B80071ED47 /* Debug */,
+				EAC2A4B01BDEA8B80071ED47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC2A4B11BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC2A4B21BDEA8B80071ED47 /* Debug */,
+				EAC2A4B31BDEA8B80071ED47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAC2A4B41BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC2A4B51BDEA8B80071ED47 /* Debug */,
+				EAC2A4B61BDEA8B80071ED47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAC2A4B71BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC2A4B81BDEA8B80071ED47 /* Debug */,
+				EAC2A4B91BDEA8B80071ED47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC2A4841BDEA8B80071ED47 /* Project object */;
+}
