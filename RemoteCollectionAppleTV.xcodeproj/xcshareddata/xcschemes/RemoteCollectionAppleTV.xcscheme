@@ -48,6 +48,16 @@
                ReferencedContainer = "container:RemoteCollectionAppleTV.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EAC2A4C71BDEA8DE0071ED47"
+               BuildableName = "RemoteServicesTests.xctest"
+               BlueprintName = "RemoteServicesTests"
+               ReferencedContainer = "container:RemoteCollectionAppleTV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
