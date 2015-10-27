@@ -1,3 +1,6 @@
+import Alamofire
+import SwiftyJSON
+
 public class RemoteServices {
     
     public init(){

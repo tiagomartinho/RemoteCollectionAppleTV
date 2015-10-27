@@ -18,6 +18,7 @@
 		EAC2A4D41BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
 		EAC2A4D51BDEA8DE0071ED47 /* RemoteServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAC2A4DE1BDEA91A0071ED47 /* RemoteServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4DD1BDEA91A0071ED47 /* RemoteServices.swift */; };
+		EE3D5B2FDF106DC48AC69B0B /* Pods_RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.release.xcconfig"; sourceTree = "<group>"; };
+		C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3D5B2FDF106DC48AC69B0B /* Pods_RemoteServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1370A8CB11F68F2D3941C1D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */,
+				A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3660843CBFBB45CDC621A202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EAC2A4831BDEA8B80071ED47 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +165,8 @@
 				EAC2A4C01BDEA8DE0071ED47 /* RemoteServices */,
 				EAC2A4CE1BDEA8DE0071ED47 /* RemoteServicesTests */,
 				EAC2A48D1BDEA8B80071ED47 /* Products */,
+				1370A8CB11F68F2D3941C1D8 /* Pods */,
+				3660843CBFBB45CDC621A202 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,10 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC2A4D61BDEA8DE0071ED47 /* Build configuration list for PBXNativeTarget "RemoteServices" */;
 			buildPhases = (
+				30FA2C7D5D10381AA2DCF5B0 /* Check Pods Manifest.lock */,
 				EAC2A4BA1BDEA8DD0071ED47 /* Sources */,
 				EAC2A4BB1BDEA8DD0071ED47 /* Frameworks */,
 				EAC2A4BC1BDEA8DD0071ED47 /* Headers */,
 				EAC2A4BD1BDEA8DD0071ED47 /* Resources */,
+				1E339849D0D1C74709EC1F69 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,6 +428,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E339849D0D1C74709EC1F69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30FA2C7D5D10381AA2DCF5B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAC2A4881BDEA8B80071ED47 /* Sources */ = {
@@ -644,6 +703,7 @@
 		};
 		EAC2A4D71BDEA8DE0071ED47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -665,6 +725,7 @@
 		};
 		EAC2A4D81BDEA8DE0071ED47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -724,6 +785,7 @@
 				EAC2A4B31BDEA8B80071ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC2A4B41BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVTests" */ = {
 			isa = XCConfigurationList;
@@ -732,6 +794,7 @@
 				EAC2A4B61BDEA8B80071ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC2A4B71BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTVUITests" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +803,7 @@
 				EAC2A4B91BDEA8B80071ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC2A4D61BDEA8DE0071ED47 /* Build configuration list for PBXNativeTarget "RemoteServices" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +812,7 @@
 				EAC2A4D81BDEA8DE0071ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC2A4DA1BDEA8DE0071ED47 /* Build configuration list for PBXNativeTarget "RemoteServicesTests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +821,7 @@
 				EAC2A4DC1BDEA8DE0071ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
