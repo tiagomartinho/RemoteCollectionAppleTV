@@ -7,7 +7,7 @@ public class ItemsService {
     }
     
     public func items(callback: ([String]) -> Void) {
-        Alamofire.request(.GET, "http://private-e765e-squeezeapi.apiary-mock.com/items")
+        Alamofire.request(.GET, ServiceApi.itemsURL)
             .validate()
             .responseJSON { response in
                 guard let data = response.data else { return }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EABAC9421BE01C8900EC258F /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9411BE01C8900EC258F /* ServiceApi.swift */; };
 		EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */; };
 		EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ViewController.swift */; };
 		EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4931BDEA8B80071ED47 /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.release.xcconfig"; sourceTree = "<group>"; };
 		C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.debug.xcconfig"; sourceTree = "<group>"; };
+		EABAC9411BE01C8900EC258F /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		EAC2A4C01BDEA8DE0071ED47 /* RemoteServices */ = {
 			isa = PBXGroup;
 			children = (
+				EABAC9411BE01C8900EC258F /* ServiceApi.swift */,
 				EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */,
 				EAC2A4C31BDEA8DE0071ED47 /* Info.plist */,
 			);
@@ -492,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABAC9421BE01C8900EC258F /* ServiceApi.swift in Sources */,
 				EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
