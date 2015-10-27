@@ -14,10 +14,10 @@
 		EAC2A4A21BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */; };
 		EAC2A4AD1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */; };
 		EAC2A4C91BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
-		EAC2A4D01BDEA8DE0071ED47 /* RemoteServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4CF1BDEA8DE0071ED47 /* RemoteServicesTests.swift */; };
+		EAC2A4D01BDEA8DE0071ED47 /* ItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */; };
 		EAC2A4D41BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
 		EAC2A4D51BDEA8DE0071ED47 /* RemoteServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EAC2A4DE1BDEA91A0071ED47 /* RemoteServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4DD1BDEA91A0071ED47 /* RemoteServices.swift */; };
+		EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */; };
 		EE3D5B2FDF106DC48AC69B0B /* Pods_RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +92,9 @@
 		EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A4C31BDEA8DE0071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC2A4C81BDEA8DE0071ED47 /* RemoteServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC2A4CF1BDEA8DE0071ED47 /* RemoteServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteServicesTests.swift; sourceTree = "<group>"; };
+		EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsServiceTests.swift; sourceTree = "<group>"; };
 		EAC2A4D11BDEA8DE0071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAC2A4DD1BDEA91A0071ED47 /* RemoteServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteServices.swift; sourceTree = "<group>"; };
+		EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 		EAC2A4C01BDEA8DE0071ED47 /* RemoteServices */ = {
 			isa = PBXGroup;
 			children = (
-				EAC2A4DD1BDEA91A0071ED47 /* RemoteServices.swift */,
+				EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */,
 				EAC2A4C31BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServices;
@@ -224,7 +224,7 @@
 		EAC2A4CE1BDEA8DE0071ED47 /* RemoteServicesTests */ = {
 			isa = PBXGroup;
 			children = (
-				EAC2A4CF1BDEA8DE0071ED47 /* RemoteServicesTests.swift */,
+				EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */,
 				EAC2A4D11BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServicesTests;
@@ -492,7 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC2A4DE1BDEA91A0071ED47 /* RemoteServices.swift in Sources */,
+				EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC2A4D01BDEA8DE0071ED47 /* RemoteServicesTests.swift in Sources */,
+				EAC2A4D01BDEA8DE0071ED47 /* ItemsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
