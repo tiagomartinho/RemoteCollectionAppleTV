@@ -16,3 +16,10 @@ extension Item {
         self.icon = json["icon"].string ?? ""
     }
 }
+
+extension Item {
+    static func itemsCollection(data:NSData)->[Item]{
+        let json = JSON(data: data)
+        return json.map { Item(json: $1) }
+    }
+}
