@@ -7,7 +7,7 @@ class ItemsServiceTests: XCTestCase {
         let expectation = expectationWithDescription("Item API")
         
         ItemsService().items { response in
-            if response.count > 0 && response[0] == "Twitter" {
+            if response.count > 0 && response[0].name == "Twitter" {
                 expectation.fulfill()
             }
         }

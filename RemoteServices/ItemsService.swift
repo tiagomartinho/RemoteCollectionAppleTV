@@ -5,14 +5,14 @@ public class ItemsService {
     public init(){
     }
     
-    public func items(callback: ([String]) -> Void) {
+    public func items(callback: ([Item]) -> Void) {
         Service().get(ServiceApi.itemsURL) { response in
             guard let data = response.data else { return }
             
             let json = JSON(data: data)
-            let name = json[0]["name"].string ?? ""
+            let item = Item(json: json[0])
             
-            callback([name])
+            callback([item])
         }
     }
 }
