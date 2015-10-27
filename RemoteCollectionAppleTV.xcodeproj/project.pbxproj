@@ -164,6 +164,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EABAC94A1BE0249100EC258F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */,
+				EABAC9451BE01EAB00EC258F /* Item.swift */,
+				EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		EABAC94B1BE0249900EC258F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		EABAC94C1BE024A100EC258F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EABAC9411BE01C8900EC258F /* ServiceApi.swift */,
+				EABAC9431BE01D7800EC258F /* Service.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		EAC2A4831BDEA8B80071ED47 = {
 			isa = PBXGroup;
 			children = (
@@ -223,11 +250,8 @@
 		EAC2A4C01BDEA8DE0071ED47 /* RemoteServices */ = {
 			isa = PBXGroup;
 			children = (
-				EABAC9411BE01C8900EC258F /* ServiceApi.swift */,
-				EABAC9431BE01D7800EC258F /* Service.swift */,
-				EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */,
-				EABAC9451BE01EAB00EC258F /* Item.swift */,
-				EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */,
+				EABAC94C1BE024A100EC258F /* Services */,
+				EABAC94A1BE0249100EC258F /* Items */,
 				EAC2A4C31BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServices;
@@ -236,7 +260,7 @@
 		EAC2A4CE1BDEA8DE0071ED47 /* RemoteServicesTests */ = {
 			isa = PBXGroup;
 			children = (
-				EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */,
+				EABAC94B1BE0249900EC258F /* Items */,
 				EAC2A4D11BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServicesTests;
