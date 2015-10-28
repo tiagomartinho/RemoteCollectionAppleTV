@@ -1,6 +1,6 @@
 import Alamofire
 
-class Service {
+public class Service {
     
     func get(url:String, callback: Response<AnyObject, NSError> -> Void) {
         Alamofire.request(.GET, url)
