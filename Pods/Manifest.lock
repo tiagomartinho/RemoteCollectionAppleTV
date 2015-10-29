@@ -1,13 +1,38 @@
 PODS:
   - Alamofire (3.1.0)
+  - OHHTTPStubs (4.4.0):
+    - OHHTTPStubs/Default (= 4.4.0)
+  - OHHTTPStubs/Core (4.4.0)
+  - OHHTTPStubs/Default (4.4.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.4.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.4.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.4.0)
   - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - OHHTTPStubs (from `https://github.com/tiagomartinho/OHHTTPStubs.git`, branch `experimental/tvOS-support`)
   - SwiftyJSON (~> 2.3)
+
+EXTERNAL SOURCES:
+  OHHTTPStubs:
+    :branch: experimental/tvOS-support
+    :git: https://github.com/tiagomartinho/OHHTTPStubs.git
+
+CHECKOUT OPTIONS:
+  OHHTTPStubs:
+    :commit: b1c9f4902da934a342c1bb92e5178f4c2b0d21e8
+    :git: https://github.com/tiagomartinho/OHHTTPStubs.git
 
 SPEC CHECKSUMS:
   Alamofire: 415bd7f56197722978759078486689f7ef913dce
+  OHHTTPStubs: 8b0fe4535fea51126f30e135973826c38c2cdc0a
   SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
 COCOAPODS: 0.39.0

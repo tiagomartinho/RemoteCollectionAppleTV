@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */; };
 		EABAC9421BE01C8900EC258F /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9411BE01C8900EC258F /* ServiceApi.swift */; };
 		EABAC9441BE01D7800EC258F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9431BE01D7800EC258F /* Service.swift */; };
 		EABAC9461BE01EAB00EC258F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9451BE01EAB00EC258F /* Item.swift */; };
@@ -78,9 +79,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.release.xcconfig"; sourceTree = "<group>"; };
+		B4EFB723815149E5537A6AE0 /* Pods-RemoteServicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EABAC9411BE01C8900EC258F /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		EABAC9431BE01D7800EC258F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EABAC9451BE01EAB00EC258F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC2A4C91BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */,
+				E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +157,8 @@
 			children = (
 				C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */,
 				A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */,
+				B4EFB723815149E5537A6AE0 /* Pods-RemoteServicesTests.debug.xcconfig */,
+				C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -160,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */,
+				7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,9 +366,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC2A4DA1BDEA8DE0071ED47 /* Build configuration list for PBXNativeTarget "RemoteServicesTests" */;
 			buildPhases = (
+				025A3927E82C2A236D53BE3C /* Check Pods Manifest.lock */,
 				EAC2A4C41BDEA8DE0071ED47 /* Sources */,
 				EAC2A4C51BDEA8DE0071ED47 /* Frameworks */,
 				EAC2A4C61BDEA8DE0071ED47 /* Resources */,
+				E60DD975B55F58EE7DA91372 /* Embed Pods Frameworks */,
+				3BD49BF6D31AD71F8235BF02 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -466,6 +477,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		025A3927E82C2A236D53BE3C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		1E339849D0D1C74709EC1F69 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +520,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD49BF6D31AD71F8235BF02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60DD975B55F58EE7DA91372 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -786,6 +842,7 @@
 		};
 		EAC2A4DB1BDEA8DE0071ED47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EFB723815149E5537A6AE0 /* Pods-RemoteServicesTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RemoteServicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -797,6 +854,7 @@
 		};
 		EAC2A4DC1BDEA8DE0071ED47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RemoteServicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8612CDD5C8D12D29A22CC0A9'
-               BlueprintName = 'Alamofire'
+               BlueprintIdentifier = 'D7DBB43BC83D7E34F89862B4'
+               BlueprintName = 'OHHTTPStubs'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Alamofire.framework'>
+               BuildableName = 'OHHTTPStubs.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
