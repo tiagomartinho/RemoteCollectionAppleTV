@@ -1,0 +1,44 @@
+ [
+  {
+  "id": 1,
+  "name": "Twitter",
+  "color": "0x55ADEF",
+  "icon": "https://pbs.twimg.com/profile_images/615680132565504000/EIpgSD2K.png",
+  },
+  {
+  "id": 2,
+  "name": "Youtube",
+  "color": "0xE72F25",
+  "icon": "https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300",
+  },
+  {
+  "id": 3,
+  "name": "Vine",
+  "color": "0x55ADEF",
+  "icon": "http://vector4u.com/wp-content/uploads/2013/11/vine_logo_vector_green.jpg",
+  },
+  {
+  "id": 4,
+  "name": "Pinterest",
+  "color": "0xDD5145",
+  "icon": "https://business.pinterest.com/sites/business/files/bg-basics-badge-02.jpg",
+  },
+  {
+  "id": 5,
+  "name": "Linkedin",
+  "color": "0x0975B4",
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png",
+  },
+  {
+  "id": 6,
+  "name": "Facebook",
+  "color": "0x577AC3",
+  "icon": "https://www.facebookbrand.com/img/fb-art.jpg",
+  },
+  {
+  "id": 7,
+  "name": "Google+",
+  "color": "0xDD5145",
+  "icon": "https://lh3.googleusercontent.com/-IMGb4CkWC98/VeXR6rWlM1I/AAAAAAAA7c4/aC-I28R6_ps/s506/GooglePlus-logos-02.png",
+  },
+  ]
