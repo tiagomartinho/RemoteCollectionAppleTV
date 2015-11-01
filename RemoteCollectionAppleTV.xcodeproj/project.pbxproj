@@ -14,6 +14,8 @@
 		EABAC9441BE01D7800EC258F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9431BE01D7800EC258F /* Service.swift */; };
 		EABAC9461BE01EAB00EC258F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9451BE01EAB00EC258F /* Item.swift */; };
 		EABAC9491BE0242D00EC258F /* Item+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */; };
+		EAC1B7E71BE6171C005495F2 /* ItemsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */; };
+		EAC1B7E91BE61D76005495F2 /* ItemsReponseError.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */; };
 		EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */; };
 		EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ViewController.swift */; };
 		EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4931BDEA8B80071ED47 /* Main.storyboard */; };
@@ -21,7 +23,6 @@
 		EAC2A4A21BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */; };
 		EAC2A4AD1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */; };
 		EAC2A4C91BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
-		EAC2A4D01BDEA8DE0071ED47 /* ItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */; };
 		EAC2A4D41BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
 		EAC2A4D51BDEA8DE0071ED47 /* RemoteServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */; };
@@ -93,6 +94,8 @@
 		EABAC9431BE01D7800EC258F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EABAC9451BE01EAB00EC258F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsServiceSpec.swift; sourceTree = "<group>"; };
+		EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsReponseError.json; sourceTree = "<group>"; };
 		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +111,6 @@
 		EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A4C31BDEA8DE0071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC2A4C81BDEA8DE0071ED47 /* RemoteServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsServiceTests.swift; sourceTree = "<group>"; };
 		EAC2A4D11BDEA8DE0071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,8 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */,
-				EAC2A4CF1BDEA8DE0071ED47 /* ItemsServiceTests.swift */,
 				EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */,
+				EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */,
+				EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC1B7E91BE61D76005495F2 /* ItemsReponseError.json in Resources */,
 				EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,7 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */,
-				EAC2A4D01BDEA8DE0071ED47 /* ItemsServiceTests.swift in Sources */,
+				EAC1B7E71BE6171C005495F2 /* ItemsServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

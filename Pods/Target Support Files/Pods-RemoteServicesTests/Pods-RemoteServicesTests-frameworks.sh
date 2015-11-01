@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-RemoteServicesTests/Nimble.framework"
   install_framework "Pods-RemoteServicesTests/OHHTTPStubs.framework"
+  install_framework "Pods-RemoteServicesTests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-RemoteServicesTests/Nimble.framework"
   install_framework "Pods-RemoteServicesTests/OHHTTPStubs.framework"
+  install_framework "Pods-RemoteServicesTests/Quick.framework"
 fi

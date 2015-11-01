@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OHHTTPStubs.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Quick.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>351F41A19E697BAD4775EA5F88D8CE34</key>
+		<key>40C38796F67B226F35C6A962739E88C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3B5173939AA099ED998D5D49D05CEA3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B9F753D23B3A010D0E2EB0AE0405D595</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE9AD5C67964B1124A5AA4C7BBA4F351</key>
+		<key>C5DB5104FED3C10F78978AFC810982B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8579C7D34301E47A0845D541097A68F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9412C49A8A2BF3279689F8461082430</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB902F48473133F8A09B30299A741770</key>
 		<dict>
 			<key>primary</key>
 			<true/>

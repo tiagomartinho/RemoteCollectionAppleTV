@@ -85,11 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RemoteServices/Alamofire.framework"
-  install_framework "Pods-RemoteServices/OHHTTPStubs.framework"
   install_framework "Pods-RemoteServices/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RemoteServices/Alamofire.framework"
-  install_framework "Pods-RemoteServices/OHHTTPStubs.framework"
   install_framework "Pods-RemoteServices/SwiftyJSON.framework"
 fi
