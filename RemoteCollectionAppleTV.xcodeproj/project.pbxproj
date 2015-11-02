@@ -15,7 +15,6 @@
 		EABAC9461BE01EAB00EC258F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9451BE01EAB00EC258F /* Item.swift */; };
 		EABAC9491BE0242D00EC258F /* Item+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */; };
 		EAC1B7E71BE6171C005495F2 /* ItemsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */; };
-		EAC1B7E91BE61D76005495F2 /* ItemsReponseError.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */; };
 		EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */; };
 		EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ViewController.swift */; };
 		EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4931BDEA8B80071ED47 /* Main.storyboard */; };
@@ -95,7 +94,6 @@
 		EABAC9451BE01EAB00EC258F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsServiceSpec.swift; sourceTree = "<group>"; };
-		EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsReponseError.json; sourceTree = "<group>"; };
 		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +176,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA812DC81BE7EBD900EDCD45 /* OHHTTPStubs Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */,
+			);
+			name = "OHHTTPStubs Helper";
+			sourceTree = "<group>";
+		};
 		EABAC94A1BE0249100EC258F /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +199,6 @@
 			children = (
 				EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */,
 				EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */,
-				EAC1B7E81BE61D76005495F2 /* ItemsReponseError.json */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -276,8 +281,8 @@
 		EAC2A4CE1BDEA8DE0071ED47 /* RemoteServicesTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */,
 				EABAC94B1BE0249900EC258F /* Items */,
+				EA812DC81BE7EBD900EDCD45 /* OHHTTPStubs Helper */,
 				EAC2A4D11BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServicesTests;
@@ -479,7 +484,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC1B7E91BE61D76005495F2 /* ItemsReponseError.json in Resources */,
 				EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
