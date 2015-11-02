@@ -184,6 +184,15 @@
 			name = "OHHTTPStubs Helper";
 			sourceTree = "<group>";
 		};
+		EA812DC91BE7EC4000EDCD45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */,
+				EAC2A4981BDEA8B80071ED47 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EABAC94A1BE0249100EC258F /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +253,7 @@
 				EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */,
 				EAC2A4911BDEA8B80071ED47 /* ViewController.swift */,
 				EAC2A4931BDEA8B80071ED47 /* Main.storyboard */,
-				EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */,
-				EAC2A4981BDEA8B80071ED47 /* Info.plist */,
+				EA812DC91BE7EC4000EDCD45 /* Supporting Files */,
 			);
 			path = RemoteCollectionAppleTV;
 			sourceTree = "<group>";
