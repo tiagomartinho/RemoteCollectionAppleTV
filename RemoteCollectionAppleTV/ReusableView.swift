@@ -7,9 +7,7 @@ class ReusableView: UIView {
     
     func xibSetup(nibName:String) {
         view = loadViewFromNib(nibName)
-        view.frame = bounds
-        view.autoresizingMask = UIViewAutoresizing.FlexibleWidth.union(UIViewAutoresizing.FlexibleHeight)
-        addSubview(view)
+        self.addView(view)
     }
     
     func loadViewFromNib(nibName:String) -> UIView {

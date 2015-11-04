@@ -26,9 +26,7 @@ class ItemCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemViewCell", forIndexPath: indexPath)
         let itemView = ItemView()
         itemView.title.text = items[indexPath.row].name
-        itemView.frame = cell.bounds
-        itemView.autoresizingMask = UIViewAutoresizing.FlexibleWidth.union(UIViewAutoresizing.FlexibleHeight)
-        cell.addSubview(itemView)
+        cell.addView(itemView)
         return cell
     }
 }

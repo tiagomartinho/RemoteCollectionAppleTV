@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D7437A215DDC79F36D00A182 /* Pods_RemoteCollectionAppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */; };
 		E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */; };
+		EA0FF5071BEA8457000ADA10 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FF5061BEA8457000ADA10 /* UIViewExtension.swift */; };
 		EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */; };
 		EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */; };
 		EAB390B01BEA7B2800437A2E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB390AF1BEA7B2800437A2E /* ReusableView.swift */; };
@@ -94,6 +95,7 @@
 		C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.debug.xcconfig"; sourceTree = "<group>"; };
 		C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteCollectionAppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA0FF5061BEA8457000ADA10 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
 		EAB390AF1BEA7B2800437A2E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				EAB390B31BEA7D6E00437A2E /* ItemView.xib */,
 				EAB390B11BEA7B3500437A2E /* ItemView.swift */,
 				EAB390AF1BEA7B2800437A2E /* ReusableView.swift */,
+				EA0FF5061BEA8457000ADA10 /* UIViewExtension.swift */,
 			);
 			path = RemoteCollectionAppleTV;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0FF5071BEA8457000ADA10 /* UIViewExtension.swift in Sources */,
 				EAB390B01BEA7B2800437A2E /* ReusableView.swift in Sources */,
 				EAC2A4921BDEA8B80071ED47 /* ItemCollectionViewController.swift in Sources */,
 				EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */,
