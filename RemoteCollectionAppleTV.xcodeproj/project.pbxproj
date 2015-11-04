@@ -10,25 +10,35 @@
 		E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */; };
 		EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */; };
 		EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */; };
+		EAB390B01BEA7B2800437A2E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB390AF1BEA7B2800437A2E /* ReusableView.swift */; };
+		EAB390B21BEA7B3500437A2E /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB390B11BEA7B3500437A2E /* ItemView.swift */; };
+		EAB390B41BEA7D6E00437A2E /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB390B31BEA7D6E00437A2E /* ItemView.xib */; };
+		EAB390B51BEA7E7A00437A2E /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
+		EAB390B71BEA7E9400437A2E /* RemoteServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EABAC9421BE01C8900EC258F /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9411BE01C8900EC258F /* ServiceApi.swift */; };
 		EABAC9441BE01D7800EC258F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9431BE01D7800EC258F /* Service.swift */; };
 		EABAC9461BE01EAB00EC258F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9451BE01EAB00EC258F /* Item.swift */; };
 		EABAC9491BE0242D00EC258F /* Item+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC9481BE0242D00EC258F /* Item+SwiftyJSON.swift */; };
 		EAC1B7E71BE6171C005495F2 /* ItemsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */; };
 		EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */; };
-		EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ViewController.swift */; };
+		EAC2A4921BDEA8B80071ED47 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4911BDEA8B80071ED47 /* ItemCollectionViewController.swift */; };
 		EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4931BDEA8B80071ED47 /* Main.storyboard */; };
 		EAC2A4971BDEA8B80071ED47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */; };
 		EAC2A4A21BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4A11BDEA8B80071ED47 /* RemoteCollectionAppleTVTests.swift */; };
 		EAC2A4AD1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4AC1BDEA8B80071ED47 /* RemoteCollectionAppleTVUITests.swift */; };
 		EAC2A4C91BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
-		EAC2A4D41BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; };
-		EAC2A4D51BDEA8DE0071ED47 /* RemoteServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A4BF1BDEA8DD0071ED47 /* RemoteServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2A4DD1BDEA91A0071ED47 /* ItemsService.swift */; };
 		EE3D5B2FDF106DC48AC69B0B /* Pods_RemoteServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EAB390B81BEA7E9400437A2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC2A4841BDEA8B80071ED47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC2A4BE1BDEA8DD0071ED47;
+			remoteInfo = RemoteServices;
+		};
 		EAC2A49E1BDEA8B80071ED47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EAC2A4841BDEA8B80071ED47 /* Project object */;
@@ -57,23 +67,16 @@
 			remoteGlobalIDString = EAC2A48B1BDEA8B80071ED47;
 			remoteInfo = RemoteCollectionAppleTV;
 		};
-		EAC2A4D21BDEA8DE0071ED47 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EAC2A4841BDEA8B80071ED47 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAC2A4BE1BDEA8DD0071ED47;
-			remoteInfo = RemoteServices;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EAC2A4D91BDEA8DE0071ED47 /* Embed Frameworks */ = {
+		EAB390BA1BEA7E9400437A2E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EAC2A4D51BDEA8DE0071ED47 /* RemoteServices.framework in Embed Frameworks */,
+				EAB390B71BEA7E9400437A2E /* RemoteServices.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,9 @@
 		C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
+		EAB390AF1BEA7B2800437A2E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		EAB390B11BEA7B3500437A2E /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		EAB390B31BEA7D6E00437A2E /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
 		EABAC9411BE01C8900EC258F /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		EABAC9431BE01D7800EC258F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EABAC9451BE01EAB00EC258F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -96,7 +102,7 @@
 		EAC1B7E61BE6171C005495F2 /* ItemsServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsServiceSpec.swift; sourceTree = "<group>"; };
 		EAC2A48C1BDEA8B80071ED47 /* RemoteCollectionAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCollectionAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAC2A4911BDEA8B80071ED47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC2A4911BDEA8B80071ED47 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		EAC2A4941BDEA8B80071ED47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAC2A4961BDEA8B80071ED47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC2A4981BDEA8B80071ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC2A4D41BDEA8DE0071ED47 /* RemoteServices.framework in Frameworks */,
+				EAB390B51BEA7E7A00437A2E /* RemoteServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +257,12 @@
 			isa = PBXGroup;
 			children = (
 				EAC2A48F1BDEA8B80071ED47 /* AppDelegate.swift */,
-				EAC2A4911BDEA8B80071ED47 /* ViewController.swift */,
+				EAC2A4911BDEA8B80071ED47 /* ItemCollectionViewController.swift */,
 				EAC2A4931BDEA8B80071ED47 /* Main.storyboard */,
 				EA812DC91BE7EC4000EDCD45 /* Supporting Files */,
+				EAB390B31BEA7D6E00437A2E /* ItemView.xib */,
+				EAB390B11BEA7B3500437A2E /* ItemView.swift */,
+				EAB390AF1BEA7B2800437A2E /* ReusableView.swift */,
 			);
 			path = RemoteCollectionAppleTV;
 			sourceTree = "<group>";
@@ -316,12 +325,12 @@
 				EAC2A4881BDEA8B80071ED47 /* Sources */,
 				EAC2A4891BDEA8B80071ED47 /* Frameworks */,
 				EAC2A48A1BDEA8B80071ED47 /* Resources */,
-				EAC2A4D91BDEA8DE0071ED47 /* Embed Frameworks */,
+				EAB390BA1BEA7E9400437A2E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EAC2A4D31BDEA8DE0071ED47 /* PBXTargetDependency */,
+				EAB390B91BEA7E9400437A2E /* PBXTargetDependency */,
 			);
 			name = RemoteCollectionAppleTV;
 			productName = RemoteCollectionAppleTV;
@@ -462,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB390B41BEA7D6E00437A2E /* ItemView.xib in Resources */,
 				EAC2A4971BDEA8B80071ED47 /* Assets.xcassets in Resources */,
 				EAC2A4951BDEA8B80071ED47 /* Main.storyboard in Resources */,
 			);
@@ -581,8 +591,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC2A4921BDEA8B80071ED47 /* ViewController.swift in Sources */,
+				EAB390B01BEA7B2800437A2E /* ReusableView.swift in Sources */,
+				EAC2A4921BDEA8B80071ED47 /* ItemCollectionViewController.swift in Sources */,
 				EAC2A4901BDEA8B80071ED47 /* AppDelegate.swift in Sources */,
+				EAB390B21BEA7B3500437A2E /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +638,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EAB390B91BEA7E9400437A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC2A4BE1BDEA8DD0071ED47 /* RemoteServices */;
+			targetProxy = EAB390B81BEA7E9400437A2E /* PBXContainerItemProxy */;
+		};
 		EAC2A49F1BDEA8B80071ED47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */;
@@ -645,11 +662,6 @@
 			isa = PBXTargetDependency;
 			target = EAC2A48B1BDEA8B80071ED47 /* RemoteCollectionAppleTV */;
 			targetProxy = EAC2A4CC1BDEA8DE0071ED47 /* PBXContainerItemProxy */;
-		};
-		EAC2A4D31BDEA8DE0071ED47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EAC2A4BE1BDEA8DD0071ED47 /* RemoteServices */;
-			targetProxy = EAC2A4D21BDEA8DE0071ED47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

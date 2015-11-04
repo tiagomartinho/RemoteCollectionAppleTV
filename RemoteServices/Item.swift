@@ -1,8 +1,8 @@
 public struct Item {
-    let id:Int
-    let name:String
-    let color:String
-    let icon:String
+    public let id:Int
+    public let name:String
+    public let color:String
+    public let icon:String
 }
 
 extension Item: Equatable {}
