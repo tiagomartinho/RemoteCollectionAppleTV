@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7437A215DDC79F36D00A182 /* Pods_RemoteCollectionAppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */; };
 		E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */; };
 		EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */; };
 		EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */; };
@@ -84,11 +85,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		59BF731517EE8D65F2C30AEB /* Pods-RemoteCollectionAppleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteCollectionAppleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteCollectionAppleTV/Pods-RemoteCollectionAppleTV.release.xcconfig"; sourceTree = "<group>"; };
+		5C72F7C56EEBDA1363B6AD82 /* Pods-RemoteCollectionAppleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteCollectionAppleTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteCollectionAppleTV/Pods-RemoteCollectionAppleTV.debug.xcconfig"; sourceTree = "<group>"; };
 		7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.release.xcconfig"; sourceTree = "<group>"; };
 		B4EFB723815149E5537A6AE0 /* Pods-RemoteServicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C18422D8DD382584DB966AD3 /* Pods-RemoteServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServices/Pods-RemoteServices.debug.xcconfig"; sourceTree = "<group>"; };
+		C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteCollectionAppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB390B51BEA7E7A00437A2E /* RemoteServices.framework in Frameworks */,
+				D7437A215DDC79F36D00A182 /* Pods_RemoteCollectionAppleTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +174,8 @@
 				A6F80CC598CF124A326DDF6D /* Pods-RemoteServices.release.xcconfig */,
 				B4EFB723815149E5537A6AE0 /* Pods-RemoteServicesTests.debug.xcconfig */,
 				C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */,
+				5C72F7C56EEBDA1363B6AD82 /* Pods-RemoteCollectionAppleTV.debug.xcconfig */,
+				59BF731517EE8D65F2C30AEB /* Pods-RemoteCollectionAppleTV.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 			children = (
 				A40028A56ADC56881698D98D /* Pods_RemoteServices.framework */,
 				7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */,
+				C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,10 +330,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC2A4B11BDEA8B80071ED47 /* Build configuration list for PBXNativeTarget "RemoteCollectionAppleTV" */;
 			buildPhases = (
+				758AE8E895E6D26401AD2CA1 /* Check Pods Manifest.lock */,
 				EAC2A4881BDEA8B80071ED47 /* Sources */,
 				EAC2A4891BDEA8B80071ED47 /* Frameworks */,
 				EAC2A48A1BDEA8B80071ED47 /* Resources */,
 				EAB390BA1BEA7E9400437A2E /* Embed Frameworks */,
+				6ED3D05804B46696598A1FDA /* Embed Pods Frameworks */,
+				54BBE81601AD93DCC58FF600 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -569,6 +580,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		54BBE81601AD93DCC58FF600 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteCollectionAppleTV/Pods-RemoteCollectionAppleTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ED3D05804B46696598A1FDA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteCollectionAppleTV/Pods-RemoteCollectionAppleTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		758AE8E895E6D26401AD2CA1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		E60DD975B55F58EE7DA91372 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -760,6 +816,7 @@
 		};
 		EAC2A4B21BDEA8B80071ED47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C72F7C56EEBDA1363B6AD82 /* Pods-RemoteCollectionAppleTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -773,6 +830,7 @@
 		};
 		EAC2A4B31BDEA8B80071ED47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BF731517EE8D65F2C30AEB /* Pods-RemoteCollectionAppleTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

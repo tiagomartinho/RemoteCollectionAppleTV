@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3582CBF4B0037F3218BF45D7'
-               BlueprintName = 'Nimble'
+               BlueprintIdentifier = '4470AB34E898530CBF2626F0'
+               BlueprintName = 'Pods-RemoteCollectionAppleTV'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Nimble.framework'>
+               BuildableName = 'Pods_RemoteCollectionAppleTV.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

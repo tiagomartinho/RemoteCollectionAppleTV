@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RemoteCollectionAppleTV.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RemoteServices.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4AB30D79F95E7A1E31DF89097BD5C2C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B9F753D23B3A010D0E2EB0AE0405D595</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDDC3DAF6B6B4B34A0A427737B0B464B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,11 +78,6 @@
 			<true/>
 		</dict>
 		<key>C8579C7D34301E47A0845D541097A68F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E9412C49A8A2BF3279689F8461082430</key>
 		<dict>
 			<key>primary</key>
 			<true/>

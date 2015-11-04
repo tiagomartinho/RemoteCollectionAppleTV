@@ -7,9 +7,17 @@ def testing_pods
  pod 'Nimble', '3.0.0'
 end
 
-target 'RemoteServices' do
+def services_pods
  pod 'Alamofire', '~> 3.0'
  pod 'SwiftyJSON', '~> 2.3'
+end
+
+target 'RemoteCollectionAppleTV' do
+ services_pods
+end
+
+target 'RemoteServices' do
+ services_pods
 end
 
 target 'RemoteServicesTests' do
