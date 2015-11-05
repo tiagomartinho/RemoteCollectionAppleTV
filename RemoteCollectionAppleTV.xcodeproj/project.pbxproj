@@ -10,8 +10,10 @@
 		D7437A215DDC79F36D00A182 /* Pods_RemoteCollectionAppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */; };
 		E360760555FEE3516078AEAD /* Pods_RemoteServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF8376B44A91979A0195F8F /* Pods_RemoteServicesTests.framework */; };
 		EA0FF5071BEA8457000ADA10 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FF5061BEA8457000ADA10 /* UIViewExtension.swift */; };
+		EA0FF5091BEA9600000ADA10 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FF5081BEA9600000ADA10 /* UIColorExtension.swift */; };
 		EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */; };
 		EA5A43781BE3A84F00CBB9F9 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */; };
+		EAA11A971BEC00F8005F4298 /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA11A961BEC00F8005F4298 /* UIColorExtensionTests.swift */; };
 		EAB390B01BEA7B2800437A2E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB390AF1BEA7B2800437A2E /* ReusableView.swift */; };
 		EAB390B21BEA7B3500437A2E /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB390B11BEA7B3500437A2E /* ItemView.swift */; };
 		EAB390B41BEA7D6E00437A2E /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB390B31BEA7D6E00437A2E /* ItemView.xib */; };
@@ -96,8 +98,10 @@
 		C19205AEE8D39DCEA0D35ACD /* Pods_RemoteCollectionAppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteCollectionAppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9038C5A268427F6D334CF /* Pods-RemoteServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServicesTests/Pods-RemoteServicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA0FF5061BEA8457000ADA10 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EA0FF5081BEA9600000ADA10 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		EA5A43751BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		EA5A43771BE3A84F00CBB9F9 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
+		EAA11A961BEC00F8005F4298 /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
 		EAB390AF1BEA7B2800437A2E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		EAB390B11BEA7B3500437A2E /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		EAB390B31BEA7D6E00437A2E /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
@@ -209,6 +213,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EAA11A921BEBFE5A005F4298 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FF5081BEA9600000ADA10 /* UIColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EAA11A951BEBFE96005F4298 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAA11A961BEC00F8005F4298 /* UIColorExtensionTests.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		EABAC94A1BE0249100EC258F /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +321,7 @@
 			children = (
 				EABAC94C1BE024A100EC258F /* Services */,
 				EABAC94A1BE0249100EC258F /* Items */,
+				EAA11A921BEBFE5A005F4298 /* Extensions */,
 				EAC2A4C31BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServices;
@@ -311,6 +332,7 @@
 			children = (
 				EABAC94B1BE0249900EC258F /* Items */,
 				EA812DC81BE7EBD900EDCD45 /* OHHTTPStubs Helper */,
+				EAA11A951BEBFE96005F4298 /* Extensions */,
 				EAC2A4D11BDEA8DE0071ED47 /* Info.plist */,
 			);
 			path = RemoteServicesTests;
@@ -683,6 +705,7 @@
 				EAC2A4DE1BDEA91A0071ED47 /* ItemsService.swift in Sources */,
 				EABAC9491BE0242D00EC258F /* Item+SwiftyJSON.swift in Sources */,
 				EABAC9441BE01D7800EC258F /* Service.swift in Sources */,
+				EA0FF5091BEA9600000ADA10 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +715,7 @@
 			files = (
 				EA5A43761BE3A82400CBB9F9 /* OHHTTPStubsSwift.swift in Sources */,
 				EAC1B7E71BE6171C005495F2 /* ItemsServiceSpec.swift in Sources */,
+				EAA11A971BEC00F8005F4298 /* UIColorExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,7 @@ extension Item {
     init(json:JSON){
         self.id = json["id"].int ?? 0
         self.name = json["name"].string ?? ""
-        self.color = json["color"].string ?? ""
+        self.color = UIColor(color: json["color"].string ?? "")
         self.icon = json["iconURL"].string ?? ""
     }
 }

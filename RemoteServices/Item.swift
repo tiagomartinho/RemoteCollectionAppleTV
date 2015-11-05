@@ -1,7 +1,9 @@
+import UIKit
+
 public struct Item {
     public let id:Int
     public let name:String
-    public let color:String
+    public let color:UIColor
     public let icon:String
 }
 
