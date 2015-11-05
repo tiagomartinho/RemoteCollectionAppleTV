@@ -41,7 +41,7 @@ class ItemsServiceSpec: QuickSpec {
                     ItemsService().items { response in
                         self.items = response
                     }
-                    let item = Item(id: 4, name: "Pinterest", color: "0xDD5145", icon: "https://business.pinterest.com/sites/business/files/bg-basics-badge-02.jpg")
+                    let item = Item(id: 4, name: "Pinterest", color: UIColor(red: 221/255, green: 81/255, blue: 69/255, alpha: 1), icon: "https://business.pinterest.com/sites/business/files/bg-basics-badge-02.jpg")
                     expect(self.items?[3]).toEventually(equal(item))
                 }
             }
