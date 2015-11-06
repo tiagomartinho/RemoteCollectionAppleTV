@@ -1,15 +1,20 @@
 import UIKit
+import RemoteServices
 
 class ItemView: ReusableView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        super.xibSetup("ItemView")
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        super.xibSetup("ItemView")
-    }
-    
+
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
+    override func nibName()->String {
+        return "ItemView"
+    }
+    
+    var item:Item? {
+        didSet{
+            title?.text = item?.name
+            //image?.image = item?.icon
+            view.backgroundColor = item?.color
+        }
+    }
 }
