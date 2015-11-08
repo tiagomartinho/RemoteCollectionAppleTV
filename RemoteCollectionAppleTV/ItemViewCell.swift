@@ -12,8 +12,14 @@ class ItemViewCell: UICollectionViewCell {
     var item:Item? {
         didSet{
             title?.text = item?.name
-            image?.sd_setImageWithURL(item?.iconURL)
-            self.backgroundColor = item?.color
+            image?.sd_setImageWithURL(item?.iconURL) { [unowned self] imageFromURL, _, _, _ in
+                var tintedImage = imageFromURL.imageWithRenderingMode(.AlwaysTemplate)
+                UIGraphicsBeginImageContextWithOptions(imageFromURL.size, false, tintedImage.scale)
+                self.item?.color.set()
+                tintedImage.drawInRect(CGRectMake(0, 0, imageFromURL.size.width, imageFromURL.size.height))
+                tintedImage = UIGraphicsGetImageFromCurrentImageContext()
+                self.image.image = tintedImage
+            }
         }
     }
     
@@ -37,7 +43,8 @@ class ItemViewCell: UICollectionViewCell {
     
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({ [unowned self] in
-                self.title.alpha = self.focused ? 1.0 : 0.0
+            self.title.alpha = self.focused ? 1.0 : 0.0
+            self.image?.backgroundColor = self.focused ? self.item?.color : nil
             }, completion: nil)
     }
 }

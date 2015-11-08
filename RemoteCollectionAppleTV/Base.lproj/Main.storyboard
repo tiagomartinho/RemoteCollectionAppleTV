@@ -14,30 +14,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bbn-kG-ZAn">
-                            <size key="itemSize" width="800" height="900"/>
+                            <size key="itemSize" width="600" height="700"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemViewCell" id="c5o-SM-XHS" customClass="ItemViewCell" customModule="RemoteCollectionAppleTV" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="90" width="800" height="900"/>
+                                <rect key="frame" x="0.0" y="190" width="600" height="700"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="900"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-sM-7GZ">
-                                            <rect key="frame" x="108" y="108" width="584" height="593"/>
-                                            <animations/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-IR-Dwf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-IR-Dwf">
                                             <rect key="frame" x="8" y="801" width="784" height="91"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-sM-7GZ">
+                                            <rect key="frame" x="48" y="48" width="704" height="713"/>
+                                            <animations/>
+                                        </imageView>
                                     </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -47,10 +46,10 @@
                                     <constraint firstItem="jAv-IR-Dwf" firstAttribute="leading" secondItem="c5o-SM-XHS" secondAttribute="leadingMargin" id="0oN-2d-HYu"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="jAv-IR-Dwf" secondAttribute="bottom" id="89M-jB-KxR"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="jAv-IR-Dwf" secondAttribute="trailing" id="Eqm-sX-OOh"/>
-                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="top" secondItem="c5o-SM-XHS" secondAttribute="topMargin" constant="100" id="Fvy-EV-3Vm"/>
-                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="leading" secondItem="c5o-SM-XHS" secondAttribute="leadingMargin" constant="100" id="SEi-Pi-adE"/>
-                                    <constraint firstItem="jAv-IR-Dwf" firstAttribute="top" secondItem="v1f-sM-7GZ" secondAttribute="bottom" constant="100" id="xL8-1G-h3j"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="v1f-sM-7GZ" secondAttribute="trailing" constant="100" id="xaB-Qo-d5p"/>
+                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="top" secondItem="c5o-SM-XHS" secondAttribute="topMargin" constant="40" id="Fvy-EV-3Vm"/>
+                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="leading" secondItem="c5o-SM-XHS" secondAttribute="leadingMargin" constant="40" id="SEi-Pi-adE"/>
+                                    <constraint firstItem="jAv-IR-Dwf" firstAttribute="top" secondItem="v1f-sM-7GZ" secondAttribute="bottom" constant="40" id="xL8-1G-h3j"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="v1f-sM-7GZ" secondAttribute="trailing" constant="40" id="xaB-Qo-d5p"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="image" destination="v1f-sM-7GZ" id="Mli-Ak-VuI"/>
