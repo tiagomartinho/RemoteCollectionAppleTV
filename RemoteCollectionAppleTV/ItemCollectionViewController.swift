@@ -11,6 +11,10 @@ class ItemCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getItems()
+    }
+    
+    func getItems(){
         RemoteServices.ItemsService().items { response in
             self.items = response
         }
@@ -23,10 +27,8 @@ class ItemCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemViewCell", forIndexPath: indexPath)
-        let itemView = ItemView()
-        itemView.item = items[indexPath.row]
-        cell.addView(itemView)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ItemViewCell.reuseIdentifier, forIndexPath: indexPath) as! ItemViewCell
+        cell.item = items[indexPath.row]
         return cell
     }
 }

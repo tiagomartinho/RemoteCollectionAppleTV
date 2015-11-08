@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BlL-UF-QhK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Item Collection View Controller-->
@@ -19,16 +20,42 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemViewCell" id="c5o-SM-XHS">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemViewCell" id="c5o-SM-XHS" customClass="ItemViewCell" customModule="RemoteCollectionAppleTV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="90" width="800" height="900"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="800" height="900"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-sM-7GZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="800" height="513"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-IR-Dwf">
+                                            <rect key="frame" x="157" y="646" width="556" height="158"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="jAv-IR-Dwf" firstAttribute="leading" secondItem="c5o-SM-XHS" secondAttribute="leadingMargin" constant="20" id="0oN-2d-HYu"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="jAv-IR-Dwf" secondAttribute="bottom" constant="20" id="89M-jB-KxR"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="jAv-IR-Dwf" secondAttribute="trailing" constant="20" id="Eqm-sX-OOh"/>
+                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="top" secondItem="c5o-SM-XHS" secondAttribute="topMargin" constant="20" id="Fvy-EV-3Vm"/>
+                                    <constraint firstItem="v1f-sM-7GZ" firstAttribute="leading" secondItem="c5o-SM-XHS" secondAttribute="leadingMargin" constant="20" id="SEi-Pi-adE"/>
+                                    <constraint firstItem="jAv-IR-Dwf" firstAttribute="top" secondItem="v1f-sM-7GZ" secondAttribute="bottom" constant="40" id="xL8-1G-h3j"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="v1f-sM-7GZ" secondAttribute="trailing" constant="20" id="xaB-Qo-d5p"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image" destination="v1f-sM-7GZ" id="Mli-Ak-VuI"/>
+                                    <outlet property="title" destination="jAv-IR-Dwf" id="NTs-Bt-BIj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
