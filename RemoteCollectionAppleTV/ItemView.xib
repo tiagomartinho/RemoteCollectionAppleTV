@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ww4-Ri-dpg">
-                    <rect key="frame" x="20" y="20" width="1880" height="941"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ww4-Ri-dpg">
+                    <rect key="frame" x="20" y="20" width="1880" height="899"/>
                     <animations/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m93-Vt-wrl">
@@ -31,7 +31,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ww4-Ri-dpg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="3Yy-pe-IVP"/>
-                <constraint firstItem="m93-Vt-wrl" firstAttribute="top" secondItem="ww4-Ri-dpg" secondAttribute="bottom" constant="8" symbolic="YES" id="8P0-2H-aX3"/>
+                <constraint firstItem="m93-Vt-wrl" firstAttribute="top" secondItem="ww4-Ri-dpg" secondAttribute="bottom" constant="50" id="8P0-2H-aX3"/>
                 <constraint firstItem="ww4-Ri-dpg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="Hbb-kV-cvA"/>
                 <constraint firstAttribute="trailing" secondItem="m93-Vt-wrl" secondAttribute="trailing" constant="20" symbolic="YES" id="O0x-CO-3Dk"/>
                 <constraint firstAttribute="trailing" secondItem="ww4-Ri-dpg" secondAttribute="trailing" constant="20" symbolic="YES" id="bll-TL-C0H"/>

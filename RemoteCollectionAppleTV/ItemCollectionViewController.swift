@@ -25,7 +25,7 @@ class ItemCollectionViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemViewCell", forIndexPath: indexPath)
         let itemView = ItemView()
-        itemView.title.text = items[indexPath.row].name
+        itemView.item = items[indexPath.row]
         cell.addView(itemView)
         return cell
     }

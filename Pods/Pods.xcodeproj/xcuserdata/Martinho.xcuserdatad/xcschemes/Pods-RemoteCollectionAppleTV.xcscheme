@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4470AB34E898530CBF2626F0'
+               BlueprintIdentifier = '6AC7370B60B8DBAB98386399'
                BlueprintName = 'Pods-RemoteCollectionAppleTV'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_RemoteCollectionAppleTV.framework'>
