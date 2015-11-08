@@ -15,6 +15,7 @@ end
 target 'RemoteCollectionAppleTV' do
  services_pods
  pod 'SDWebImage', :git => 'https://github.com/rs/SDWebImage.git'
+ pod 'SVProgressHUD', :git => 'https://github.com/TransitApp/SVProgressHUD'
 end
 
 target 'RemoteServices' do

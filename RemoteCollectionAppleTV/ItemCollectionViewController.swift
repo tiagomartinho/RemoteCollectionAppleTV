@@ -1,5 +1,6 @@
 import UIKit
 import RemoteServices
+import SVProgressHUD
 
 class ItemCollectionViewController: UICollectionViewController {
 
@@ -9,38 +10,17 @@ class ItemCollectionViewController: UICollectionViewController {
         }
     }
 
-    var activityIndicator:UIActivityIndicatorView?
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        initLoadingInterface()
         getItems()
     }
     
-    func initLoadingInterface(){
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
-        self.view.addSubview(activityIndicator)
-        self.activityIndicator = activityIndicator
-        self.activityIndicator?.startAnimating()
-    }
-    
     func getItems(){
+        SVProgressHUD.show()
         RemoteServices.ItemsService().items { response in
             self.items = response
-            self.stopLoadingInterface()
+            SVProgressHUD.dismiss()
         }
-    }
-    
-    func stopLoadingInterface(){
-        self.activityIndicator?.stopAnimating()
-    }
-    
-    // MARK : viewWillLayoutSubviews
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        let viewBounds = self.view.bounds
-        self.activityIndicator?.center = CGPointMake(CGRectGetMidX(viewBounds), CGRectGetMidY(viewBounds))
     }
     
     // MARK: UICollectionViewDataSource

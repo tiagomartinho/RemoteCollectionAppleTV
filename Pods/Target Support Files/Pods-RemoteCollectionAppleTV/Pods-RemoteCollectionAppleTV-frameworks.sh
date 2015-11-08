@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RemoteCollectionAppleTV/Alamofire.framework"
   install_framework "Pods-RemoteCollectionAppleTV/SDWebImage.framework"
+  install_framework "Pods-RemoteCollectionAppleTV/SVProgressHUD.framework"
   install_framework "Pods-RemoteCollectionAppleTV/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RemoteCollectionAppleTV/Alamofire.framework"
   install_framework "Pods-RemoteCollectionAppleTV/SDWebImage.framework"
+  install_framework "Pods-RemoteCollectionAppleTV/SVProgressHUD.framework"
   install_framework "Pods-RemoteCollectionAppleTV/SwiftyJSON.framework"
 fi

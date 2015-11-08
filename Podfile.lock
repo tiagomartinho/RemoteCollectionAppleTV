@@ -18,6 +18,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (2.0-beta)
   - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
@@ -26,16 +27,22 @@ DEPENDENCIES:
   - OHHTTPStubs (~> 4.5)
   - Quick (~> 0.8.0)
   - SDWebImage (from `https://github.com/rs/SDWebImage.git`)
+  - SVProgressHUD (from `https://github.com/TransitApp/SVProgressHUD`)
   - SwiftyJSON (~> 2.3)
 
 EXTERNAL SOURCES:
   SDWebImage:
     :git: https://github.com/rs/SDWebImage.git
+  SVProgressHUD:
+    :git: https://github.com/TransitApp/SVProgressHUD
 
 CHECKOUT OPTIONS:
   SDWebImage:
     :commit: 30e9e0b516cca03d9f2abe75a91512d75b846406
     :git: https://github.com/rs/SDWebImage.git
+  SVProgressHUD:
+    :commit: 20b4bacdc770ce36895f66727d578c90b74b4171
+    :git: https://github.com/TransitApp/SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
@@ -43,6 +50,7 @@ SPEC CHECKSUMS:
   OHHTTPStubs: cb1aefbbeb4de4e741644455d4b945538e5248a2
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   SDWebImage: 119e50946eee9ddf15589227ec2b6b37966ecd04
+  SVProgressHUD: c83337f10ed32d701c423d519059a249973c8662
   SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
 COCOAPODS: 0.39.0
