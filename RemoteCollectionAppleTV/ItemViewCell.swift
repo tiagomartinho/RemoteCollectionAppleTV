@@ -21,7 +21,7 @@ class ItemViewCell: UICollectionViewCell {
     func setImageTintColor(imageFromURL:UIImage) {
         var tintedImage = imageFromURL.imageWithRenderingMode(.AlwaysTemplate)
         UIGraphicsBeginImageContextWithOptions(imageFromURL.size, false, tintedImage.scale)
-        self.itemView?.backgroundColor.set()
+        self.itemView?.color.set()
         tintedImage.drawInRect(CGRectMake(0, 0, imageFromURL.size.width, imageFromURL.size.height))
         tintedImage = UIGraphicsGetImageFromCurrentImageContext()
         self.image.image = tintedImage
@@ -48,7 +48,7 @@ class ItemViewCell: UICollectionViewCell {
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({ [unowned self] in
             self.title.alpha = self.focused ? 1.0 : 0.0
-            self.image?.backgroundColor = self.focused ? self.itemView?.backgroundColor : nil
+            self.image?.backgroundColor = self.focused ? self.itemView?.color : nil
             }, completion: nil)
     }
 }
