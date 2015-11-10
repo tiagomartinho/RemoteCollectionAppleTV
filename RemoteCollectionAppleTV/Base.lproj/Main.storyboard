@@ -27,14 +27,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-IR-Dwf">
-                                            <rect key="frame" x="8" y="801" width="784" height="91"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-IR-Dwf">
+                                            <rect key="frame" x="8" y="601" width="584" height="91"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-sM-7GZ">
-                                            <rect key="frame" x="48" y="48" width="704" height="713"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-sM-7GZ">
+                                            <rect key="frame" x="48" y="48" width="504" height="513"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>

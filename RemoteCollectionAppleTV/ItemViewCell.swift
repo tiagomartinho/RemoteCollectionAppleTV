@@ -13,14 +13,18 @@ class ItemViewCell: UICollectionViewCell {
         didSet{
             title?.text = item?.name
             image?.sd_setImageWithURL(item?.iconURL) { [unowned self] imageFromURL, _, _, _ in
-                var tintedImage = imageFromURL.imageWithRenderingMode(.AlwaysTemplate)
-                UIGraphicsBeginImageContextWithOptions(imageFromURL.size, false, tintedImage.scale)
-                self.item?.color.set()
-                tintedImage.drawInRect(CGRectMake(0, 0, imageFromURL.size.width, imageFromURL.size.height))
-                tintedImage = UIGraphicsGetImageFromCurrentImageContext()
-                self.image.image = tintedImage
+                self.setImageTint(imageFromURL)
             }
         }
+    }
+    
+    func setImageTint(imageFromURL:UIImage){
+        var tintedImage = imageFromURL.imageWithRenderingMode(.AlwaysTemplate)
+        UIGraphicsBeginImageContextWithOptions(imageFromURL.size, false, tintedImage.scale)
+        self.item?.color.set()
+        tintedImage.drawInRect(CGRectMake(0, 0, imageFromURL.size.width, imageFromURL.size.height))
+        tintedImage = UIGraphicsGetImageFromCurrentImageContext()
+        self.image.image = tintedImage
     }
     
     // MARK: Initialization
