@@ -3,19 +3,22 @@ import RemoteServices
 import SVProgressHUD
 
 class ItemCollectionViewController: UICollectionViewController {
-    
-    private var items = [Item]()
+
+    private var items = [Item]() {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getItems()
     }
     
-    private func getItems(){
+    func getItems(){
         SVProgressHUD.show()
-        RemoteServices.ItemsService().items { [unowned self] response in
+        RemoteServices.ItemsService().items { response in
             self.items = response
-            self.collectionView?.reloadData()
             SVProgressHUD.dismiss()
         }
     }
@@ -28,7 +31,7 @@ class ItemCollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ItemViewCell.reuseIdentifier, forIndexPath: indexPath) as! ItemViewCell
-        cell.itemView = items[indexPath.row]
+        cell.item = items[indexPath.row]
         return cell
     }
 }
