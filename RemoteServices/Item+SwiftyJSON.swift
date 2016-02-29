@@ -7,6 +7,9 @@ extension Item {
         self.name = json["name"].string ?? ""
         self.color = UIColor(color: json["color"].string ?? "")
         self.iconURL = NSURL(string: json["iconURL"].string ?? "")!
+        self.title = json["title"].string ?? ""
+        self.content = json["content"].string ?? ""
+        self.imageURL = NSURL(string: json["imageURL"].string ?? "")!
     }
 }
 
