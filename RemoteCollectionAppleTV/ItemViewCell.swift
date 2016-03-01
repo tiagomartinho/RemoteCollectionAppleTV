@@ -26,8 +26,6 @@ class ItemViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        image.adjustsImageWhenAncestorFocused = true
-        image.clipsToBounds = false
         initialViewsState()
     }
     
@@ -39,9 +37,6 @@ class ItemViewCell: UICollectionViewCell {
     }
     
     func initialViewsState(){
-//        title.alpha = 0.0
-//        name.alpha = 0.0
-//        logo.alpha = 0.0
         image.alpha = 0.75
         containerView.alpha = 0.0
         contentBackgroundView.backgroundColor = nil
@@ -50,13 +45,67 @@ class ItemViewCell: UICollectionViewCell {
     // MARK: UIFocusEnvironment
     
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-        coordinator.addCoordinatedAnimations({ [unowned self] in
-//            self.title.alpha = self.focused ? 1.0 : 0.0
-//            self.name.alpha = self.focused ? 1.0 : 0.0
-//            self.logo.alpha = self.focused ? 1.0 : 0.0
+        
+        if context.nextFocusedView == self {
+            contentView.addGestureRecognizer(panGesture)
+        }
+        else {
+            contentView.removeGestureRecognizer(panGesture)
+        }
+        
+        coordinator.addCoordinatedAnimations({ () -> Void in
+            self.transform = self.focused ? self.focusedTransform : CGAffineTransformIdentity
             self.image.alpha = self.focused ? 1.0 : 0.75
             self.containerView.alpha = self.focused ? 1.0 : 0.0
             self.contentBackgroundView.backgroundColor = self.focused ? self.item?.color.colorWithAlphaComponent(0.75) : nil
             }, completion: nil)
+    }
+    
+    var focusedTransform: CGAffineTransform {
+        return CGAffineTransformMakeScale(1.10, 1.10)
+    }
+    
+    private lazy var panGesture: UIPanGestureRecognizer = {
+        let pan = UIPanGestureRecognizer(target: self, action: Selector("viewPanned:"))
+        pan.cancelsTouchesInView = false
+        return pan
+    }()
+    
+    var initialPanPosition: CGPoint?
+    
+    func viewPanned(pan: UIPanGestureRecognizer) {
+        switch pan.state {
+        case .Began:
+            initialPanPosition = pan.locationInView(contentView)
+        case .Changed:
+            if let initialPanPosition = initialPanPosition {
+                let currentPosition = pan.locationInView(contentView)
+                let diff = CGPoint(
+                    x: currentPosition.x - initialPanPosition.x,
+                    y: currentPosition.y - initialPanPosition.y
+                )
+                
+                let parallaxCoefficientX = 1 / self.frame.width * 16
+                let parallaxCoefficientY = 1 / self.frame.height * 16
+                
+                self.transform = CGAffineTransformConcat(
+                    focusedTransform,
+                    CGAffineTransformMakeTranslation(
+                        diff.x * parallaxCoefficientX,
+                        diff.y * parallaxCoefficientY
+                    )
+                )
+            }
+        default:
+            UIView.animateWithDuration(0.3,
+                delay: 0,
+                usingSpringWithDamping: 0.8,
+                initialSpringVelocity: 0,
+                options: .BeginFromCurrentState,
+                animations: { () -> Void in
+                    self.transform = self.focusedTransform
+                },
+                completion: nil)
+        }
     }
 }

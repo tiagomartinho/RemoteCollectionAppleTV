@@ -3,13 +3,13 @@ import RemoteServices
 import SVProgressHUD
 
 class ItemCollectionViewController: UICollectionViewController {
-
+    
     private var items = [Item]() {
         didSet {
             self.collectionView?.reloadData()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getItems()
@@ -24,7 +24,7 @@ class ItemCollectionViewController: UICollectionViewController {
     }
     
     // MARK: UICollectionViewDataSource
-
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
