@@ -9,7 +9,7 @@ class ItemViewCell: UICollectionViewCell {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var contentBackgroundView: UIView!
+    @IBOutlet weak var whiteView: UIView!
     
     static let reuseIdentifier = "ItemViewCell"
     
@@ -39,7 +39,7 @@ class ItemViewCell: UICollectionViewCell {
     func initialViewsState(){
         image.alpha = 0.75
         containerView.alpha = 0.0
-        contentBackgroundView.backgroundColor = nil
+        whiteView.alpha = 0.0
     }
     
     // MARK: UIFocusEnvironment
@@ -57,7 +57,7 @@ class ItemViewCell: UICollectionViewCell {
             self.transform = self.focused ? self.focusedTransform : CGAffineTransformIdentity
             self.image.alpha = self.focused ? 1.0 : 0.75
             self.containerView.alpha = self.focused ? 1.0 : 0.0
-            self.contentBackgroundView.backgroundColor = self.focused ? self.item?.color.colorWithAlphaComponent(0.75) : nil
+            self.whiteView.alpha = self.focused ? 1.0 : 0.0
             }, completion: nil)
     }
     
